@@ -1,0 +1,219 @@
+// styles.scss
+
+@import "./Sass/Utilities/variables";
+@import "./Sass/Utilities/themes";
+@import "./Sass/Components/accordion";
+@import "./Sass/Components/accrediation";
+@import "./Sass/Components/buttons";
+@import "./Sass/Components/card";
+@import "./Sass/Components/footer";
+@import "./Sass/Components/nav";
+@import "./Sass/Utilities/assets";
+@import "./Sass/Utilities/global";
+
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.hero-banner {
+  background-image: url(https://client-data.knak.io/production/email_assets/5fd10b569d941/4TNLEqAoNPzl59LUbHgQrRsb8rcW7kdoP5MlxNOM.png);
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-color: #efefef;
+  margin: -5px 0;
+  overflow: hidden;
+}
+
+.hero-banner h1 {
+  font-size: 2.75rem;
+  text-align: left;
+  color: #0a3370;
+  background: rgba(255, 255, 255, 0.5);
+  width: 50%;
+  padding: 3%;
+  float: right;
+  margin: 8% 5%;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+.apply-now {
+  background-image: url(https://client-data.knak.io/production/email_assets/5fd10b569d941/mPViQfUpXSgYUtP77DJrHWCVqnYQ6JuS77UWabRL.png);
+  background-color: #fdb913;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.apply-now h2 {
+  margin-bottom: 1%;
+}
+
+.apply-now p {
+  color: #071b39;
+  margin-bottom: 2%;
+
+}
+
+.br-5 {
+  border-radius: 15px;
+}
+
+/* Accordion */
+
+.acc-item-content[aria-hidden="true"] a[href] {
+  visibility: hidden;
+}
+
+.accordion-container {
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
+}
+
+#accordion-intro {
+  text-align: left;
+  margin-bottom: 2%;
+  padding: 1.5% 2%;
+
+
+}
+
+#accordion button:focus {
+  border-radius: 0px;
+  background-color: #deeefa;
+  border: solid 1px #539bd4;
+}
+
+#accordion button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 600;
+  color: #0a3370;
+  background-color: #fff;
+  padding: 1.5% 2%;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.4rem;
+  border-radius: 0px;
+}
+
+#accordion ol li {
+  list-style: none;
+}
+
+#accordion li {
+  border-bottom: 2px solid #deeefa;
+}
+
+#accordion button::after {
+  font-family: "FontAwesome";
+  content: "\f067";
+  font-size: 1rem;
+  color: #0a3370;
+  float: right;
+}
+
+#accordion button.active:after {
+  font-family: "FontAwesome";
+  content: "\f068";
+  color: #0a3370;
+}
+
+#accordion {
+  width: 100%;
+  margin: auto;
+}
+
+#accordion ol {
+  color: #666666;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.acc-item-content {
+  padding: 0% 2%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.acc-item-content ul {
+  color: #666666;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding-left: 20px;
+  margin: 10px;
+}
+
+.acc-item-content li {
+  border-bottom: none !important;
+  list-style-type: disc;
+}
+
+.acc-item-content p {
+  padding: 1% 0%;
+}
+
+@media only screen and (max-width: 980px) {
+  #accordion button {
+    padding: 5% 2%;
+  }
+
+  .accordion-month h3 {
+    padding-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .accordion-container {
+    width: 100%;
+    margin: auto;
+    padding: 2%;
+    margin-top: 5%;
+  }
+
+  #accordion button {
+    padding: 5% 2%;
+  }
+
+  .accordion-month {
+    padding-top: 7%;
+  }
+}
+
+
+  
+  
+  
+ 
+  
+  
+ 
+  
