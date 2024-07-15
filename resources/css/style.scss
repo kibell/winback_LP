@@ -19,14 +19,14 @@ body {
 .hero-banner {
   background-image: url(https://client-data.knak.io/production/email_assets/5fd10b569d941/4TNLEqAoNPzl59LUbHgQrRsb8rcW7kdoP5MlxNOM.png);
   width: 100%;
-  height: 500px;
+  height: auto;
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   background-color: #efefef;
-  margin: -5px 0;
+  margin: 5rem 0;
   overflow: hidden;
 }
 
@@ -39,6 +39,23 @@ body {
   padding: 3%;
   float: right;
   margin: 8% 5%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .hero-banner {
+    height: auto;
+    background-position: left;
+
+  }
+
+  .hero-banner h1 {
+    width: 100%;
+    margin: 50px 0;
+    padding: 10%;
+    background: rgba(255, 255, 255, 0.75);
+
+  }
 }
 
 table {
@@ -208,6 +225,19 @@ th {
   }
 }
 
+.sf {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
 
   
   

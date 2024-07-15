@@ -10,19 +10,20 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 1.5rem;
-  color: $ink-blue;
-  font-weight: 700; 
-  font-size: $font-size-2xl;
-  font-family: $open-sans;
+  font-family: Oswald, Arial, sans-serif;
+  font-weight: bold;
+  color: #0a3370;
+  font-size: 2.7rem;
+  line-height: 1.2;
 }
 
 
 h3 {
   color: $ink-blue;
-  font-size: $font-size-2xl;
-  font-family: $open-sans;
+  font-size: 1.5rem;
+  font-family: Oswald, Arial, sans-serif;
   font-weight: 900;
+  line-height: 1.2;
 }
 
 p,

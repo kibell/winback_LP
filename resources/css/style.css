@@ -171,18 +171,19 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 1.5rem;
-  color: #00244e;
-  font-weight: 700;
-  font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: Oswald, Arial, sans-serif;
+  font-weight: bold;
+  color: #0a3370;
+  font-size: 2.7rem;
+  line-height: 1.2;
 }
 
 h3 {
   color: #00244e;
   font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: Oswald, Arial, sans-serif;
   font-weight: 900;
+  line-height: 1.2;
 }
 
 p,
@@ -321,18 +322,19 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 1.5rem;
-  color: #00244e;
-  font-weight: 700;
-  font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: Oswald, Arial, sans-serif;
+  font-weight: bold;
+  color: #0a3370;
+  font-size: 2.7rem;
+  line-height: 1.2;
 }
 
 h3 {
   color: #00244e;
   font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: Oswald, Arial, sans-serif;
   font-weight: 900;
+  line-height: 1.2;
 }
 
 p,
@@ -379,14 +381,14 @@ body {
 .hero-banner {
   background-image: url(https://client-data.knak.io/production/email_assets/5fd10b569d941/4TNLEqAoNPzl59LUbHgQrRsb8rcW7kdoP5MlxNOM.png);
   width: 100%;
-  height: 500px;
+  height: auto;
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   background-color: #efefef;
-  margin: -5px 0;
+  margin: 5rem 0;
   overflow: hidden;
 }
 
@@ -401,6 +403,18 @@ body {
   margin: 8% 5%;
 }
 
+@media only screen and (max-width: 600px) {
+  .hero-banner {
+    height: auto;
+    background-position: left;
+  }
+  .hero-banner h1 {
+    width: 100%;
+    margin: 50px 0;
+    padding: 10%;
+    background: rgba(255, 255, 255, 0.75);
+  }
+}
 table {
   width: 50%;
   border-collapse: collapse;
@@ -560,4 +574,17 @@ th {
   .accordion-month {
     padding-top: 7%;
   }
+}
+.sf {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 1000; /* Ensure it stays on top of other elements */
 }/*# sourceMappingURL=style.css.map */
